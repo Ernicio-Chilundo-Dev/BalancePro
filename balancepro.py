@@ -16,7 +16,7 @@ def verficar_saldo(numero_conta):
         print(f"Saldo da conta {numero_conta} R$ {saldo:.2f}")
         return saldo
     else:
-        print("Erro: Conts nso encontrada")
+        print("Erro: Conta nao encontrada")
         return None
     
 # Funcao para realizar deposito
@@ -43,7 +43,7 @@ def sacar(numero_conta, valor):
 # Funcao para encerrar uma conta
 
 def encerrar_contas(numero_conta):
-    if numero_conta in contas:
+    # if numero_conta in contas:
         if numero_conta in contas:
             if contas[numero_conta]['saldo'] == 0:
                 del contas[numero_conta]
@@ -90,7 +90,6 @@ def menu():
         else:
             print("Opcao invalida tente novamente.")
 
-menu(4
-     )
+menu()
 
  
